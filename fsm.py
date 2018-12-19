@@ -114,7 +114,7 @@ class TocMachine(GraphMachine):
 
 
     def on_enter_description(self, event):
-        print("有兩項輕鬆的心理小測驗～～\n\n1.動物愛情心理測驗，每答完一題可立即看到選項的解釋，輸入next進行下一題。\n\n2.隱藏悲傷指數測驗，將每題你所選選項的得分加總後對照測驗結果。")
+        print("I'm entering description!")
 
         sender_id = event['sender']['id']
         response = send_text_message(sender_id, "有兩項輕鬆的心理小測驗～～\n\n1.動物愛情心理測驗，每答完一題可立即看到選項的解釋，輸入next進行下一題。\n\n2.隱藏悲傷指數測驗，將每題你所選選項的得分加總後對照測驗結果。")
@@ -125,7 +125,7 @@ class TocMachine(GraphMachine):
         print('Leaving description')
 
     def on_enter_state1(self, event):
-        print("1.假如世界末日來臨，你只能解救一種動物，你會救以下哪一種?\na. 兔\nb. 羊\nc. 鹿\nd. 馬")
+        print("I'm entering state1!")
 
         sender_id = event['sender']['id']
         send_text_message(sender_id, "1.假如世界末日來臨，你只能解救一種動物，你會救以下哪一種?\na. 兔\nb. 羊\nc. 鹿\nd. 馬")
@@ -134,7 +134,7 @@ class TocMachine(GraphMachine):
         print('Leaving state1')
 
     def on_enter_state1_reply(self, event):
-        print("你在現實生活中會被哪一類人所吸引：\na. 兔——有分裂的人格，外表像冰而內心熾熱的人。\nb. 羊——重視順從而溫暖的人。\nc. 鹿——優雅及有禮貌的人。\nd. 馬——不受約束嚮往自由的人。")
+        print("I'm entering state1_reply!")
 
         sender_id = event['sender']['id']
         send_text_message(sender_id, "你在現實生活中會被哪一類人所吸引：\na. 兔——有分裂的人格，外表像冰而內心熾熱的人。\nb. 羊——重視順從而溫暖的人。\nc. 鹿——優雅及有禮貌的人。\nd. 馬——不受約束嚮往自由的人。")
@@ -144,7 +144,7 @@ class TocMachine(GraphMachine):
         print('Leaving state1_reply')
 
     def on_enter_state2(self, event):
-        print("2.在非洲旅行土中，你造訪了一個部落，部落首領堅持讓你選一種動物帶回去當紀念品，你會哪一種?\na. 猴\nb. 獅\nc. 蛇\nd. 長頸鹿")
+        print("I'm entering state2!")
 
         sender_id = event['sender']['id']
         send_text_message(sender_id, "2.在非洲旅行土中，你造訪了一個部落，部落首領堅持讓你選一種動物帶回去當紀念品，你會哪一種?\na. 猴\nb. 獅\nc. 蛇\nd. 長頸鹿")
@@ -153,7 +153,7 @@ class TocMachine(GraphMachine):
         print('Leaving state2')
 
     def on_enter_state2_reply(self, event):
-        print("哪種求愛手段最容易使你覺得情不自禁：\na. 猴——有創造性，從不會讓你感到無趣。\nb. 獅——直來直往，直接地告訴你他愛你。\nc. 蛇——心情搖擺不定，忽冷忽熱，遊移不定。\nd. 長頸鹿——有耐性，對你永遠不放棄。")
+        print("I'm entering state2_reply!")
 
         sender_id = event['sender']['id']
         send_text_message(sender_id, "哪種求愛手段最容易使你覺得情不自禁：\na. 猴——有創造性，從不會讓你感到無趣。\nb. 獅——直來直往，直接地告訴你他愛你。\nc. 蛇——心情搖擺不定，忽冷忽熱，遊移不定。\nd. 長頸鹿——有耐性，對你永遠不放棄。")
@@ -163,7 +163,7 @@ class TocMachine(GraphMachine):
         print('Leaving state2_reply')
 
     def on_enter_state3(self, event):
-        print("3.你做錯事了，上天懲罰你變成人以外的動物，你想變成下面哪一種動物?\na. 狗\nb. 貓\nc. 馬\nd. 蛇")
+        print("I'm entering state3!")
 
         sender_id = event['sender']['id']
         send_text_message(sender_id, "3.你做錯事了，上天懲罰你變成人以外的動物，你想變成下面哪一種動物?\na. 狗\nb. 貓\nc. 馬\nd. 蛇")
@@ -172,7 +172,7 @@ class TocMachine(GraphMachine):
         print('Leaving state3')
 
     def on_enter_state3_reply(self, event):
-        print("你想給愛人什麼樣的印象：\na. 狗——忠誠忠實，永不改變。\nb. 貓——有個性的。\nc. 馬——樂觀的。\nd. 蛇——可通融的。")
+        print("I'm entering state3_reply!")
 
         sender_id = event['sender']['id']
         send_text_message(sender_id, "你想給愛人什麼樣的印象：\na. 狗——忠誠忠實，永不改變。\nb. 貓——有個性的。\nc. 馬——樂觀的。\nd. 蛇——可通融的。")
@@ -182,7 +182,7 @@ class TocMachine(GraphMachine):
         print('Leaving state3_reply')
 
     def on_enter_state4(self, event):
-        print("4.有一天，你碰上了一種會說人話的動物，你希望那是哪種動物?\na. 羊\nb. 馬\nc. 兔\nd. 鳥")
+        print("I'm entering state4!")
 
         sender_id = event['sender']['id']
         send_text_message(sender_id, "4.有一天，你碰上了一種會說人話的動物，你希望那是哪種動物?\na. 羊\nb. 馬\nc. 兔\nd. 鳥")
@@ -191,7 +191,7 @@ class TocMachine(GraphMachine):
         print('Leaving state4')
 
     def on_enter_state4_reply(self, event):
-        print("你想跟你的愛人建立一個什麼樣的關係：\na. 羊——你倆不用多說話，用心溝通，對方自然知道你要什麼。\nb. 馬——你倆能談任何事情，沒有秘密。\nc. 兔——一種讓你一直能夠感受到溫暖與戀愛的關係。\nd. 鳥——你和愛人不只關心現在也關心將來，一種你能與之一起成長的長期關係。")
+        print("I'm entering state4_reply!")
 
         sender_id = event['sender']['id']
         send_text_message(sender_id, "你想跟你的愛人建立一個什麼樣的關係：\na. 羊——你倆不用多說話，用心溝通，對方自然知道你要什麼。\nb. 馬——你倆能談任何事情，沒有秘密。\nc. 兔——一種讓你一直能夠感受到溫暖與戀愛的關係。\nd. 鳥——你和愛人不只關心現在也關心將來，一種你能與之一起成長的長期關係。")
@@ -201,7 +201,7 @@ class TocMachine(GraphMachine):
         print('Leaving state4_reply')
 
     def on_enter_state5(self, event):
-        print("5.假如你有5分鐘的時間可以當一種動物，你會選擇當哪種動物?\na. 獅\nb. 貓\nc. 馬\nd. 鴿子")
+        print("I'm entering state5!")
 
         sender_id = event['sender']['id']
         send_text_message(sender_id, "5.假如你有5分鐘的時間可以當一種動物，你會選擇當哪種動物?\na. 獅\nb. 貓\nc. 馬\nd. 鴿子")
@@ -210,7 +210,7 @@ class TocMachine(GraphMachine):
         print('Leaving state5')
 
     def on_enter_state5_reply(self, event):
-        print("此刻你對愛情的看法：\na. 獅——你總是渴望愛情，能為愛情做任何事，但你不會輕易墜入情網。\nb. 貓——你非常以自我為中心，認為愛情對你是可以輕易得到和放棄的東西。\nc. 馬——你不想被固定的關係綁住，你只想處處調情。\nd. 鴿子——你認為愛情是二人互相的承諾。")
+        print("I'm entering state5_reply!")
 
         sender_id = event['sender']['id']
         send_text_message(sender_id, "此刻你對愛情的看法：\na. 獅——你總是渴望愛情，能為愛情做任何事，但你不會輕易墜入情網。\nb. 貓——你非常以自我為中心，認為愛情對你是可以輕易得到和放棄的東西。\nc. 馬——你不想被固定的關係綁住，你只想處處調情。\nd. 鴿子——你認為愛情是二人互相的承諾。")
@@ -221,7 +221,7 @@ class TocMachine(GraphMachine):
         print('Leaving state5_reply')
 
     def on_enter_state6(self, event):
-        print("1.和朋友在一起時，是否也覺得心裡空虛？\na.有過幾次，心情非常低落（2分）\nb.沒有，和朋友在一起很開心（1分）\nc.經常這樣，總是被心事困擾（3分）")
+        print("I'm entering state6!")
 
         sender_id = event['sender']['id']
         send_text_message(sender_id, "1.和朋友在一起時，是否也覺得心裡空虛？\na.有過幾次，心情非常低落（2分）\nb.沒有，和朋友在一起很開心（1分）\nc.經常這樣，總是被心事困擾（3分）")
@@ -231,7 +231,7 @@ class TocMachine(GraphMachine):
         print('Leaving state6')
 
     def on_enter_state7(self, event):
-        print("2.心情不好的時候，你會？\na.快速宣洩悲傷的情緒（1分）\nb.悶在心裡，自己慢慢消化（3分）")
+        print("I'm entering state7!")
 
         sender_id = event['sender']['id']
         send_text_message(sender_id, "2.心情不好的時候，你會？\na.快速宣洩悲傷的情緒（1分）\nb.悶在心裡，自己慢慢消化（3分）")
@@ -241,7 +241,7 @@ class TocMachine(GraphMachine):
         print('Leaving state7')
 
     def on_enter_state8(self, event):
-        print("3.在K歌的時候，你會嘗試唱不熟的歌嗎？\na.不會（3分）\nb.會（1分）\nc.看情況（2分）")
+        print("I'm entering state8!")
 
         sender_id = event['sender']['id']
         send_text_message(sender_id, "3.在K歌的時候，你會嘗試唱不熟的歌嗎？\na.不會（3分）\nb.會（1分）\nc.看情況（2分）")
@@ -251,7 +251,7 @@ class TocMachine(GraphMachine):
         print('Leaving state8')
 
     def on_enter_state9(self, event):
-        print("4.假如，你能看到自己結婚那天或死亡那天，你會選？\na.結婚那天（1分）\nb.死亡那天（3分)")
+        print("I'm entering state9!")
 
         sender_id = event['sender']['id']
         send_text_message(sender_id, "4.假如，你能看到自己結婚那天或死亡那天，你會選？\na.結婚那天（1分）\nb.死亡那天（3分)")
@@ -261,7 +261,7 @@ class TocMachine(GraphMachine):
         print('Leaving state9')
 
     def on_enter_state10(self, event):
-        print("5.如果你被外星人抓走了，你會選擇死亡還是成為實驗體從而變強大？\na.選擇死亡（3分）\nb.成為實驗體（1分）")
+        print("I'm entering state10!")
 
         sender_id = event['sender']['id']
         send_text_message(sender_id, "5.如果你被外星人抓走了，你會選擇死亡還是成為實驗體從而變強大？\na.選擇死亡（3分）\nb.成為實驗體（1分）")
@@ -271,7 +271,7 @@ class TocMachine(GraphMachine):
         print('Leaving state10')
 
     def on_enter_state11(self, event):
-        print("測驗結束，以下是測驗結果～～\n\n5~8分：隱藏悲傷指數15%\n你人緣很好，就像是朋友中的開心果，有你在的地方總是充斥著歡樂。平時你樂觀、積極，很少會想到陰暗的一面，即使接近表里如一的你也難免在某些時候難以排解的情緒。\n\n9~12分：隱藏悲傷指數40%\n你的個性比較開朗，也願與朋友嬉戲打鬧，所以這時候的你是歡樂的。只是一個人的時候或者在夜深人靜的時候，你內心會產生一種說不出的感覺，整個人提不起精神，內心憋著一口氣讓人感覺很難受。\n\n13分以上：隱藏悲傷指數70%\n早已不是肆無忌憚的年紀，現在的你學會將心事埋在心底；將痛苦自己消化；將憂傷掩藏；就算有時候情不自禁的消極、負能量爆棚，你都能將情緒收拾的很好。")
+        print("I'm entering state11!")
 
         sender_id = event['sender']['id']
         send_text_message(sender_id, "測驗結束，以下是測驗結果～～\n\n5~8分：隱藏悲傷指數15%\n你人緣很好，就像是朋友中的開心果，有你在的地方總是充斥著歡樂。平時你樂觀、積極，很少會想到陰暗的一面，即使接近表里如一的你也難免在某些時候難以排解的情緒。\n\n9~12分：隱藏悲傷指數40%\n你的個性比較開朗，也願與朋友嬉戲打鬧，所以這時候的你是歡樂的。只是一個人的時候或者在夜深人靜的時候，你內心會產生一種說不出的感覺，整個人提不起精神，內心憋著一口氣讓人感覺很難受。\n\n13分以上：隱藏悲傷指數70%\n早已不是肆無忌憚的年紀，現在的你學會將心事埋在心底；將痛苦自己消化；將憂傷掩藏；就算有時候情不自禁的消極、負能量爆棚，你都能將情緒收拾的很好。")
